@@ -12,3 +12,10 @@ jobs:
     steps:
       - name: this is first step
         run: echo "Hello world"
+
+      - name: Checkout repsitory
+        uses: actions/checkout@v4.2.2
+
+      - name: listing all files
+        run: ls -la
+        
